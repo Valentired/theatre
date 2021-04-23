@@ -12,18 +12,24 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
-		<header class="header bd-container">
-			<div class="header__inner">
-				<div class="header__nav">
+		<header class="header">
+			<div class="header__inner bd-container">
+				<div class="header__nav" id="header-nav">
 					<a href="#" class="header__nav-link"><span class="header__link">Главная</span></a>
 
-					<a href="#" class="header__nav-link"><span class="header__link">О театре</span></a>
+					<a href="#about" class="header__nav-link"><span class="header__link">О театре</span></a>
 
-					<a href="#" class="header__nav-link"><span class="header__link">Наши постановки</span></a>
+					<a href="#posters" class="header__nav-link"><span class="header__link">Наши постановки</span></a>
 
-					<a href="#" class="header__nav-link"><span class="header__link">Партнеры театра</span></a>
+					<a href="#partners" class="header__nav-link"><span class="header__link">Партнеры театра</span></a>
 
-					<a href="#" class="header__nav-link"><span class="header__link">Контакты</span></a>
+					<a href="#contacts" class="header__nav-link"><span class="header__link">Контакты</span></a>
+				</div>
+
+				<div class="header__nav-toggle" id="nav-toggle">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
+						<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+					</svg>
 				</div>
 
 				<a href="tel:+74951234567" class="header__phone"><span class="header__link">+7 495 123-45-67</span></a>
@@ -109,7 +115,7 @@
 			</div>
 		</section>
 
-		<section class="about section">
+		<section class="about section" id="about">
 			<h2 class="about__title section-title"><span class="title-alt">О</span> театре</h2>
 
 			<div class="about__content bd-grid bd-container">
@@ -181,7 +187,7 @@
 			</div>
 		</section>
 
-		<section class="posters section">
+		<section class="posters section" id="posters">
 			<h2 class="section-title"><span class="title-alt">Наши</span> постановки</h2>
 
 			<div class="posters__inner bd-grid bd-container-wide">
@@ -288,7 +294,7 @@
 			</div>
 		</section>
 
-		<section class="partners section">
+		<section class="partners section" id="partners">
 			<h2 class="section-title"><span class="title-alt">Партнеры</span> театра</h2>
 
 			<div class="partners__inner bd-grid bd-container">
@@ -303,7 +309,7 @@
 			</div>
 		</section>
 
-		<section class="contacts section">
+		<section class="contacts section" id="contacts">
 			<h2 class="contacts__title section-title"><span class="title-alt">Стать</span> меценатом</h2>
 
 			<div class="contacts__inner bd-container">
@@ -341,7 +347,6 @@
 		</section>
 
 		<footer class="footer">
-			
 			<div class="footer__inner bd-container">
 				<div class="footer_separator"></div>
 
