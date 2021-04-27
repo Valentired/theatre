@@ -94,11 +94,6 @@ body {
 	line-height: var(--base-line-height);
 	color: var(--text-color);
 	background-color: var(--bg-color);
-	/* background-image: url(../img/bg.png);
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: 100vw calc(100vh + 100px); */
-	/* background-size: ; */
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -279,7 +274,7 @@ select {
 .sidebar {
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: flex-end;
 	flex-direction: column;
 	position: fixed;
 	left: 0;
@@ -357,8 +352,10 @@ svg path {
 .home__inner {
 	grid-template-columns: minmax(300px, 540px) 370px;
 	column-gap: 125px;
-	padding-top: 80px;
-	padding-bottom: 159px;
+	/* padding-top: 80px; */
+	height: calc(100% - var(--header-height));
+	align-items: center;
+	
 }
 
 .home__text {

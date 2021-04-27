@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	$(".home__slider").slick({
 		arrows: true,
-		draggable: false,
+		draggable: true,
 		infinite: true,
 		speed: 500,
 		fade: true,
